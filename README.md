@@ -14,6 +14,14 @@ A mostly-complete port of Celeste (2018) to WebAssembly, with full support for E
 - Loading the game consumes 600M or so of memory, which is still around 3x lower than the original port, but it is still too much for low end devices.
 - You may encounter issues on Firefox.
 
+## Play on GitHub Pages
+
+Open [Webleste](https://awesome118.github.io/celeste-wasm/) in a Chromium-based desktop browser. On the first visit, the page installs a small service worker and reloads once to enable the cross-origin isolation required by threaded WebAssembly.
+
+You must own the FNA version of Celeste. The game files are not included in this repository or hosted by the Pages site. Use the setup screen to copy your local Celeste installation into browser storage. The game needs around 1GB of memory and may not run well on low-end devices.
+
+The Pages site is deployed automatically by GitHub Actions when changes are pushed to the `threads-v2` branch.
+
 ## I want to build this
 
 1. Ensure node and pnpm exist and `pnpm i`
