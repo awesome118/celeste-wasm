@@ -25,7 +25,7 @@ The Pages site is deployed automatically by GitHub Actions when changes are push
 ## I want to build this
 
 1. Ensure node and pnpm exist and `pnpm i`
-2. Install dotnet 9.0.4
+2. Install the .NET 10 SDK
 3. Install the mono-devel package on your distro
 4. Run `sudo dotnet workload restore` in `loader/`
 5. Run `make serve` for a dev server and `make publish` for a release build
